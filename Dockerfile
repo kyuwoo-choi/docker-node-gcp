@@ -8,5 +8,5 @@ RUN apt-get update \
 && rm -rf /var/lib/apt/lists/*
 RUN npm install -g bower gulp
 ENV CLOUDSDK_PYTHON_SITEPACKAGES 1
-ENV PATH /root/google-cloud-sdk/bin:$PATH
+ENV PATH /root/google-cloud-sdk/bin:/usr/local/bin:$PATH
 CMD ["/bin/bash"]
